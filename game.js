@@ -34,7 +34,7 @@ let questions = [
 		choice2: "alert('Hello World')",
 		choice3: "alertBox('Hello World')",
 		choice4: "console.log('Hello World')",
-		anser: 2,
+		answer: 2,
 	}
 ];
 
@@ -51,7 +51,7 @@ startGame = () => {
 
 getNewQuestion = () => {
 	if(availableQuestions.length == 0 || questionCounter >= MAX_QUESTIONS) {
-		localStore.setItem("mostRecentScore", score); 
+		localStorage.setItem("mostRecentScore", score); 
 		return window.location.assign("end.html");
 	}
 
