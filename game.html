@@ -7,6 +7,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="game.css"
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -15,10 +16,25 @@
 
 <body>
 	<div class="container">
-		<div id="home" class="flex-center flex-column">
-			<h1>Quiz App</h1>
-			<a class="btn" href="game.html">Play</a>
-			<a class="btn" href="/highscores.html">High Scores!</a>
+		<div id="game" class="justif-center flex-column">
+			<h2 id="question">What is the anser to this question?</h2>
+			<div class="choice-container">
+				<p class="choice-prefix">A</p>
+				<p class="choice-text">Choice 1</p>
+			</div>
+			<div class="choice-container">
+				<p class="choice-prefix">B</p>
+				<p class="choice-text">Choice 2</p>
+			</div>
+			<div class="choice-container">
+				<p class="choice-prefix">C</p>
+				<p class="choice-text">Choice 3</p>
+			</div>
+			<div class="choice-container">
+				<p class="choice-prefix">D</p>
+				<p class="choice-text">Choice 4</p>
+			</div>
 		</div>
 	</div>
 </body>
+</html>
