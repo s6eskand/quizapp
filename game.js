@@ -19,10 +19,10 @@ let questions = [
 	},
 	{
 		question: "What is the correct syntax for referring to an external script 'myscript.js'?",
-		choice1: "<script href='myscript.js'",
-		choice2: "<script link='myscript.js'",
-		choice3: "<script src='myscript.js'",
-		choice4: "<script thisistherightanser='myscript.js'",
+		choice1: "<script href='myscript.js'>",
+		choice2: "<script link='myscript.js'>",
+		choice3: "<script src='myscript.js'>",
+		choice4: "<script thisistherightanser='myscript.js'>",
 		answer: 3,
 	},
 	{
@@ -72,8 +72,19 @@ choices.forEach(choice => {
 		acceptingAnswers = false;
 		const selectedChoice = e.target;
 		const selectedAnswer = selectedChoice.dataset["number"];
-		console.log(selectedAnswer);
-		getNewQuestion();
+
+		var classToApply = 'incorrect';
+			if (selectedAnswer == currentQuestion.answer) {
+				classToApply = 'correct';
+			};
+
+		selectedChoice.parentElement.classList.add(classToApply);
+
+		setTimeout(() => {
+			selectedChoice.parentElement.classList.remove(classToApply);
+			getNewQuestion();
+		}, 1000);
+
 	})
 });
 
