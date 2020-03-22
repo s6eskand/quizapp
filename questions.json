@@ -5,7 +5,7 @@
 		"choice2": "<javascript>",
 		"choice3": "<js>",
 		"choice4": "<scripting>",
-		"answer": 1,
+		"answer": 1
 	},
 	{
 		"question": "What is the correct syntax for referring to an external script 'myscript.js'?",
@@ -13,7 +13,7 @@
 		"choice2": "<script link='myscript.js'>",
 		"choice3": "<script src='myscript.js'>",
 		"choice4": "<script thisistherightanser='myscript.js'>",
-		"answer": 3,
+		"answer": 3
 	},
 	{
 		"question": "How do you write 'Hello World' in an alert box?",
@@ -21,6 +21,6 @@
 		"choice2": "alert('Hello World')",
 		"choice3": "alertBox('Hello World')",
 		"choice4": "console.log('Hello World')",
-		"answer": 2,
+		"answer": 2
 	}
 ]
